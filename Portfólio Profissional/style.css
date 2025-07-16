@@ -1,0 +1,220 @@
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #b9e1eb;
+  color: #222;
+  scroll-behavior: smooth;
+}
+
+
+.container {
+  text-align: center;
+  max-width: 700px;
+  margin: 60px auto 40px;
+  padding: 20px;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4f46e5;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+p {
+  color: #262525;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.links a {
+  display: inline-block;
+  background: #4f46e5;
+  color: white;
+  text-decoration: none;
+  margin: 40px 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.links a:hover {
+  background: #4338ca;
+  transform: scale(1.05);
+}
+
+.projects-section {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 24px;
+  margin-bottom: 80px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #4f46e5;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.habilidades h2 {
+  font-size: 2.5rem; /* maior título */
+  margin-bottom: 25px;
+  color: #003366;
+  text-align: center; /* garante centralização do título */
+}
+
+.habilidades .icones {
+  font-size: 60px; /* ícones maiores */
+  color: #003366;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.projetos h2 {
+  font-size: 3rem;
+  color: #003366;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.foto-perfil {
+  width: 180px; /* largura desejada */
+  height: auto; /* mantém a proporção */
+  border-radius: 70%; /* se quiser deixar a foto arredondada */
+  display: block;
+  margin: 20px auto;;
+}
+
+.promo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #00c9ff 0%, #92fe9d 100%);
+}
+
+.promo-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  text-align: center;
+  animation: slideIn 1s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.promo-box h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.promo-box p {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 10px 0;
+}
+
+.promo-box .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #111;
+  margin: 20px 0;
+}
+
+.promo-button {
+  background: linear-gradient(45deg, #25d366, #128c7e);
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(18, 140, 126, 0.4);
+}
+
+.promo-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(18, 140, 126, 0.6);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .foto {
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .card-projeto {
+    width: 100%;
+  }
+}
+
